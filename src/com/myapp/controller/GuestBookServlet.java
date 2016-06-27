@@ -92,7 +92,7 @@ public class GuestBookServlet extends HttpServlet {
 //			System.out.println("User id: " + item.getUser().getId() + "\n Name: " + item.getUser().getUsername() );
 //		}		
 		tx.commit();
-		session.close();
+//		session.close();
 		request.setAttribute("messages", messages);
 		request.setAttribute("tags", tags);
 		RequestDispatcher view = request.getRequestDispatcher("guestbook.jsp");
